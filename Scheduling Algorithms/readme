@@ -1,0 +1,58 @@
+
+README
+
+J Haigh
+
+
+To compile:
+make lab2
+
+To run:
+./lab2 file 0
+./lab2 file 1
+./lab2 file 2
+./lab2 file 2 (quantumsize)
+
+0 runs First Come First Serve
+1 runs Shortest Remaining Task First
+2 runs Round Robin
+
+if the quantumsize is forgotten it will be defaulted to 4
+
+	
+Description of Program:
+
+This program returns theoretical data on how the First Come First Serve, Shortest Remaining Task First, and Round Robin scheduling algorithms work. 
+The program prints out finish, waiting, turnaround and response time along with the number of context switches that are needed to complete processing.
+It also returns the average of the times and the total number of context switches. I set my averages to a fixed setprecision of 3 everytime.
+
+A user will provide a file with the following information on one line separated by spaces:
+pid: a unique numeric process ID.
+arrival time: the time when the task arrives in the unit of milliseconds
+CPU burst time: the CPU time requested by a process
+
+An example of input file:
+1 0 10
+2 1 2
+3 2 9
+4 3 5
+
+
+Source Files:
+
+main.cpp - driver file for the program
+
+lab2functions.cpp - holds implementation for
+scheduling algorithms and calculations
+
+lab2functions.h - holds declarations of
+lab2functions
+
+queue.cpp - holds implementation for simple
+queue of Tasks
+
+queue.h - holds declarations of queue 
+
+task.h - holds a Task struct to hold all
+the data of a process
+
