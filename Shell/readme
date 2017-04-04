@@ -1,0 +1,23 @@
+README
+
+Compiled with GCC 4.8.2
+
+Source Files:
+program1.cpp - the main file that sets up functions to run correctly
+program1functions.cpp - implementation to send commands and arguments to be executed by the system
+program1functions.h - has the prototypes for the functions that execute system calls
+
+Command line input needs to be:
+command
+command -argument
+command > file
+command -argument > file
+command < file
+command argument < file
+
+It displays an error message when the command cannot be found based off the filepath.
+
+Change directory command does not work and I have no error checking for if the typed command has errors.
+If you type a command that is partially correct it will try to run and it will not exit.
+So the exit command would need to be used to exit all running children as well as the parent.
+
